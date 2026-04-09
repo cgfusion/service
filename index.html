@@ -37,12 +37,11 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Header / Hero Section */
         header {
             text-align: center;
             padding: 100px 20px;
@@ -67,13 +66,11 @@
         }
 
         header p {
-            font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 40px auto;
             font-size: 1.3rem;
         }
 
-        /* Neon Button */
         .btn-neon {
             display: inline-block;
             padding: 15px 40px;
@@ -98,7 +95,6 @@
             transform: scale(1.05);
         }
 
-        /* Main Content Sections */
         section {
             padding: 60px 0;
         }
@@ -111,10 +107,9 @@
             text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
         }
 
-        /* Grid Cards */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 30px;
         }
 
@@ -154,11 +149,11 @@
 
         .card ul {
             list-style-type: none;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .card ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             padding-left: 20px;
             position: relative;
         }
@@ -172,7 +167,22 @@
             top: 4px;
         }
 
-        /* Footer */
+        .rank-list {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(0, 243, 255, 0.05);
+            border-left: 3px solid var(--neon-cyan);
+            font-size: 1rem;
+        }
+
+        .rank-highlight {
+            color: var(--neon-cyan);
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -186,11 +196,11 @@
             color: var(--neon-cyan);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             header h1 { font-size: 2.8rem; }
             header h2 { font-size: 1.2rem; }
             .section-title { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -200,45 +210,54 @@
         <div class="container">
             <h1>AlphaSteps</h1>
             <h2>Ubah Cara Anda Belajar Matematik!</h2>
-            <p>Adakah matematik satu subjek yang membosankan atau menakutkan? AlphaSteps hadir untuk mengubah persepsi tersebut! Kami menggabungkan silibus pembelajaran sebenar dengan dunia permainan yang memukau.</p>
+            <p>Sistem pendidikan interaktif yang menggabungkan pengiraan asas dengan dunia permainan cyberpunk. Bersedia untuk menaikkan pangkat anda?</p>
             <a href="#" class="btn-neon">Muat Turun Sekarang</a>
         </div>
     </header>
 
-    <section class="container">
-        <h2 class="section-title">Kenapa Anda Mesti Cuba?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>🎮 Dunia Futuristik</h3>
-                <p>Lupakan antara muka aplikasi pendidikan tradisional yang kaku. AlphaSteps membawa pelajar ke dalam visual berinspirasikan <strong>cyberpunk</strong> yang dinamik, moden, dan interaktif untuk mengekalkan fokus.</p>
-            </div>
-            <div class="card">
-                <h3>📈 Pantau Kemajuan Bersama</h3>
-                <p>Pendidikan adalah usaha bersama. AlphaSteps menyediakan akses berbeza untuk persekitaran yang lebih tersusun:</p>
-                <ul>
-                    <li><strong>Pelajar:</strong> Fokus pada permainan & skor.</li>
-                    <li><strong>Ibu Bapa:</strong> Pantau prestasi anak di rumah.</li>
-                    <li><strong>Guru:</strong> Kenal pasti topik yang perlukan perhatian.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <section class="container" style="padding-bottom: 80px;">
-        <h2 class="section-title">Tiga Mod Pembelajaran</h2>
+        <h2 class="section-title">Empat Mod Pembelajaran</h2>
         <div class="grid">
+            
             <div class="card">
                 <h3>1. Latihan Solo</h3>
-                <p>Belajar mengikut rentak sendiri. Ini adalah ruang yang tenang dan tanpa tekanan masa untuk pelajar membina serta memperkukuhkan pemahaman asas pengiraan.</p>
+                <p>Belajar mengikut rentak sendiri tanpa tekanan masa untuk membina dan memperkukuhkan asas pengiraan.</p>
+                <div class="rank-list">
+                    <strong>Pangkat Boleh Dicapai:</strong><br>
+                    <span class="rank-highlight">NOVIS ➔ PERANTIS ➔ MAHIR ➔ PAKAR ➔ JAGUH</span>
+                </div>
             </div>
+
             <div class="card">
                 <h3>2. Penilaian Standard</h3>
-                <p>Ujian berstruktur untuk menilai tahap penguasaan semasa pelajar. Bantu kenal pasti di mana tahap kekuatan anda dan topik apa yang masih lemah.</p>
+                <p>Ujian berstruktur untuk menilai tahap penguasaan semasa pelajar secara keseluruhan.</p>
+                <div class="rank-list">
+                    <strong>Sistem Penggredan:</strong><br>
+                    <span class="rank-highlight">GRED D (ASAS) ➔ GRED C ➔ GRED B ➔ GRED A ➔ GRED S (SEMPURNA)</span>
+                </div>
             </div>
+
             <div class="card">
                 <h3>3. Arena Kompetitif</h3>
-                <p>Sudah bersedia? Uji kelajuan dan ketepatan anda di <em>Ranked Arenas</em>! Bersaing skor dengan rakan-rakan secara sihat untuk naik ke carta teratas.</p>
+                <p>Uji kelajuan dan ketepatan anda di *Ranked Arenas*. Bersaing markah dengan pemain lain untuk naik ke carta teratas!</p>
+                <div class="rank-list">
+                    <strong>Peringkat (Rank):</strong><br>
+                    <span class="rank-highlight">GANGSA ➔ PERAK ➔ EMAS ➔ PLATINUM ➔ BERLIAN ➔ ALPHA</span>
+                </div>
             </div>
+
+            <div class="card">
+                <h3>4. Mod Kelas (Classroom)</h3>
+                <p>Sesi interaktif secara langsung (live) yang dikawal sepenuhnya oleh guru.</p>
+                <ul>
+                    <li><strong>Akses Mudah:</strong> Guru mencipta kelas secara automatik. Murid boleh didaftarkan oleh guru atau masuk sendiri menggunakan <strong>Kod Kelas / QR Code</strong>.</li>
+                    <li><strong>Kawalan Penuh:</strong> Guru menetapkan jumlah soalan, tahap kesukaran, dan had masa.</li>
+                    <li><strong>Aksi Serentak:</strong> Apabila guru menekan <em>'Start'</em>, kiraan detik bermula dan semua murid menjawab set soalan yang sama.</li>
+                    <li><strong>Live Leaderboard:</strong> Guru boleh memantau kedudukan murid secara *live*. Kedudukan akan sentiasa berubah berdasarkan ketepatan jawapan!</li>
+                    <li><strong>Rekod Pangkalan Data:</strong> Keputusan papan pendahulu (leaderboard) disimpan dalam sistem untuk disemak bila-bila masa.</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
